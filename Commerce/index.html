@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Commerce</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/jquery.formstyler.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header">
+            <div class="header__top">
+                <div class="wrap">
+                    <div class="header__contacts">
+                        <div class="header__logo header__logo_top">
+                            <a href="#">Commerce</a>
+                        </div>
+                        <div class="header__city">
+                            <label>Ваш город:</label>
+                            <select>
+                                <option>Москва</option>
+                                <option>Санкт-Петербург</option>
+                                <option>Нижний Новгород</option>
+                                <option>Казань</option>
+                            </select>
+                        </div>
+                        <div class="header__block-info">
+                            <p><span>Адрес магазина:</span> г. Москва, Варшавское ш, д.68 к.3</p>
+                            <p><span>График работы:</span> с 9:00 до 21:00 без выходных</p>
+                        </div>
+                        <div class="header__phone header__phone_top">
+                            <a href="tel:74956771779">+7 (495) 677-17-79</a>
+                        </div>
+                        <div class="header__private">
+                            <a href="#">Личный кабинет</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="wrap">
+                    <div class="header__block-logo">
+                        <div class="header__threedots">
+                            <a href="#"></a>
+                        </div>
+                        <div class="header__logo">
+                            <a href="#">Commerce</a>
+                            <p>простой слоган состоящий из шести слов</p>
+                        </div>
+                        <div class="header__phone phone-bottom">
+                            <a href="tel:74956771779">+7 (495) 677-17-79</a>
+                            <a href="">Заказать звонок</a>
+                        </div>
+                        <div class="header__input">
+                            <input type="text" placeholder="Поиск по сайту">
+                        </div>
+                        <div class="header__cart">
+                            <p class="header__quantity">0</p>
+                            <p class="header__sum">0,0 ₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav">
+            <div class="wrap">
+                <ul class="nav__menu">
+                    <li class="nav__menu-item">
+                        <a href="#">Каталог товаров</a>
+                        <ul class="submenu submenu_catalog">
+                            <li><a href="#">Тележки для склада</a></li>
+                            <li><a href="#">Колеса, олесные опоры</a></li>
+                            <li><a href="#">Складская техника</a></li>
+                            <li><a href="#">Металлические поддоны</a></li>
+                            <li><a href="#">Стеллажи и тележки для воды</a></li>
+                            <li><a href="#">Сетчатые контейнеры</a></li>
+                            <li><a href="#">Лестницы</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__menu-item"><a href="#">О компании</a></li>
+                    <li class="nav__menu-item"><a href="#">Новости</a></li>
+                    <li class="nav__menu-item"><a href="#">Соотрудничество</a></li>
+                    <li class="nav__menu-item"><a href="#">Доставка и оплата</a></li>
+                    <li class="nav__menu-item"><a href="#">Обзоры</a></li>
+                    <li class="nav__menu-item"><a href="#">Контакты</a></li>
+                    <li class="nav__menu-item"><a href="#">Пункт меню</a></li>
+                    <li class="nav__menu-item">
+                        <a href="#"></a>
+                        <ul class="submenu submenu_dots">
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Самовывоз</a></li>
+                            <li><a href="#">Условия продажи</a></li>
+                            <li><a href="#">Оплата заказа</a></li>
+                            <li><a href="#">Корпоративным клиентам</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="menu__mobile hide">
+            <div class="menu__one">
+                <div class="menu__name">
+                    <div class="spinner">
+                        <span class="spinner-line line-1"></span>
+                        <span class="spinner-line line-2"></span>
+                    </div>
+                    <p>Меню</p>
+                </div>
+                <ul>
+                    <li class="menu__one-item"><a href="#">Тележки для склада</a></li>
+                    <li class="menu__one-item"><a href="#">Колеса, колесные опоры</a></li>
+                    <li class="menu__one-item" id="arrow-none"><a href="#">Складская техника</a></li>
+                    <li class="menu__one-item"><a href="#">Металлические поддоны</a></li>
+                    <li class="menu__one-item"><a href="#">Стеллажи и тележки для воды</a></li>
+                    <li class="menu__one-item"><a href="#">Сетчатые контейнеры</a></li>
+                    <li class="menu__one-item" id="arrow-none"><a href="#">Лестницы</a></li>
+                </ul>
+            </div>
+            <div class="menu__two">
+                <div class="menu__name">
+                    <a href="#" class="arrow-left"></a>
+                    <p>Сумки и рюкзаки</p>
+                </div>
+                <ul>
+                    <li id="arrow-none"><a href="#">Для ручной клади</a></li>
+                    <li><a href="#">Колеса, колесные опоры</a></li>
+                    <li id="arrow-none"><a href="#">Тканевые рюкзаки</a></li>
+                    <li><a href="#">Чемоданы размера S</a></li>
+                    <li><a href="#">Чемоданы размера M</a></li>
+                    <li id="arrow-none"><a href="#">Категория 1</a></li>
+                    <li id="arrow-none"><a href="#">Категория 2</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/jquery.formstyler.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
